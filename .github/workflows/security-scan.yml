@@ -1,0 +1,10 @@
+name: Security Scan
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+
+jobs:
+  security:
+    uses: praetorian-rang/capability-ci-callee/.github/workflows/security-scan.yml@main
